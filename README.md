@@ -1,0 +1,2 @@
+# FastEndpointsApi
+For testing FastEndpoints

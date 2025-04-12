@@ -1,7 +1,10 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/obj
+**/obj/
+**/bin/
+**/Properties/
+/.idea/
 # Rider ignored files
 /projectSettingsUpdater.xml
 /.idea.FastEndpointsApi.iml

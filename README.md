@@ -11,4 +11,10 @@ Api is a mock crud api for returning warehouse data for a mock ecom company or s
 - DELETE Delete a warehoue
 - PUT Update warehouse
 
+## Todo
+- create crud api
+- add swagger/open api spec for each endpoint
+- add auth for create endpoint
+- 
+
 

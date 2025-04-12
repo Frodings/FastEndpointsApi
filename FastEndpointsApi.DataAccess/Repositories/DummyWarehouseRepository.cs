@@ -1,20 +1,22 @@
-
-
-using FastEndpointsApi.DataAccess.Models;
+using FastEndpointsApi.Domain.Models;
 
 namespace FastEndpointsApi.DataAccess.Repositories;
 
 public class DummyWarehouseRepository : IWarehouseRepository
 {
-    private readonly List<Models.Warehouse> _warehouses = new()
+    private readonly List<Warehouse> _warehouses = new()
     {
-        new Warehouse { Id = 1, Name = "Main Warehouse", Location = "New York" },
-        new Warehouse { Id = 2, Name = "Backup Warehouse", Location = "Los Angeles" }
+        new Warehouse { Id = "1", Name = "Hovedvarehus", Location = "New York" },
+        new Warehouse { Id = "2", Name = "Sekundært varehus", Location = "Los Angeles" }
     };
 
     public IEnumerable<Warehouse> GetAll() => _warehouses;
 
-    public Warehouse? GetById(int id) => _warehouses.FirstOrDefault(w => w.Id == id);
+    public async Task<Warehouse?> GetById(string id)
+    {
+        var warehouse = _warehouses.FirstOrDefault(w => w.Id == id);
+        return warehouse;
+    }
 
     public void Add(Warehouse warehouse)
     {
@@ -24,16 +26,16 @@ public class DummyWarehouseRepository : IWarehouseRepository
 
     public void Update(Warehouse warehouse)
     {
-        var existing = GetById(warehouse.Id);
-        if (existing is null) return;
-        existing.Name = warehouse.Name;
-        existing.Location = warehouse.Location;
+        // var existing = GetById(warehouse.Id);
+        // if (existing is null) return;
+        // existing.Name = warehouse.Name;
+        // existing.Location = warehouse.Location;
     }
 
     public void Delete(int id)
     {
-        var warehouse = GetById(id);
-        if (warehouse is not null)
-            _warehouses.Remove(warehouse);
+        // var warehouse = GetById(id);
+        // if (warehouse is not null)
+        //     _warehouses.Remove(warehouse);
     }
 }

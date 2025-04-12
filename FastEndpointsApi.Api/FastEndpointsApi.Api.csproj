@@ -15,13 +15,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\FastEndpointsApi.DataAccess\FastEndpointsApi.DataAccess.csproj" />
+      <ProjectReference Include="..\FastEndpointsApi.Domain\FastEndpointsApi.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Features\AddNewWarehouse\" />
       <Folder Include="Features\DeleteWarehouse\" />
       <Folder Include="Features\GetAllWarehouses\" />
-      <Folder Include="Features\GetWarehouse\" />
     </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
-using FastEndpointsApi.DataAccess.Models;
+using FastEndpointsApi.Domain.Models;
 
 namespace FastEndpointsApi.DataAccess.Repositories;
 
 public interface IWarehouseRepository
 {
     IEnumerable<Warehouse> GetAll();
-    Warehouse? GetById(int id);
+    Task<Warehouse?> GetById(string id);
     void Add(Warehouse warehouse);
     void Update(Warehouse warehouse);
     void Delete(int id);

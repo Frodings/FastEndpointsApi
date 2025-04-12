@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5ABC4CFE-514
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsApi.Domain", "FastEndpointsApi.Domain\FastEndpointsApi.Domain.csproj", "{489FBC07-04EE-416C-BE18-10C87E52E573}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +25,14 @@ Global
 		{9701C545-05FB-40D9-8DAF-C6923CB81D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9701C545-05FB-40D9-8DAF-C6923CB81D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9701C545-05FB-40D9-8DAF-C6923CB81D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489FBC07-04EE-416C-BE18-10C87E52E573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489FBC07-04EE-416C-BE18-10C87E52E573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489FBC07-04EE-416C-BE18-10C87E52E573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489FBC07-04EE-416C-BE18-10C87E52E573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{09DD1153-EEB2-43AE-B01D-93D1AE888441} = {5ABC4CFE-5144-4DB5-A779-982F17A6D492}
 		{9701C545-05FB-40D9-8DAF-C6923CB81D88} = {5ABC4CFE-5144-4DB5-A779-982F17A6D492}
+		{489FBC07-04EE-416C-BE18-10C87E52E573} = {5ABC4CFE-5144-4DB5-A779-982F17A6D492}
 	EndGlobalSection
 EndGlobal

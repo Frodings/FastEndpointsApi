@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace FastEndpointsApi.Features.GetWarehouse;
 
+/// <summary>
+/// Get warehouse (by id)
+/// </summary>
 public class GetWarehouseEndpoint : EndpointWithoutRequest<Results<Ok<GetWarehouseResponse>,NotFound>>
 {
     private readonly IWarehouseRepository _warehouseRepository;
@@ -15,7 +18,7 @@ public class GetWarehouseEndpoint : EndpointWithoutRequest<Results<Ok<GetWarehou
 
     public override void Configure()
     {
-        Get("/api/warehouses/{id}");
+        Get("warehouses/{id}");
         AllowAnonymous();
     }
 

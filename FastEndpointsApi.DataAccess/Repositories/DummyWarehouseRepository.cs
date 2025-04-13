@@ -6,8 +6,8 @@ public class DummyWarehouseRepository : IWarehouseRepository
 {
     private readonly List<Warehouse> _warehouses = new()
     {
-        new Warehouse { Id = "1", Name = "Hovedvarehus", Location = "New York" },
-        new Warehouse { Id = "2", Name = "Sekundært varehus", Location = "Los Angeles" }
+        new Warehouse { Id = "1", Name = "Hovedvarehus", Location = "Oslo" },
+        new Warehouse { Id = "2", Name = "Sekundært varehus", Location = "Bodø" }
     };
 
     public IEnumerable<Warehouse> GetAll() => _warehouses;
@@ -18,10 +18,14 @@ public class DummyWarehouseRepository : IWarehouseRepository
         return warehouse;
     }
 
-    public void Add(Warehouse warehouse)
+    public string Add(Warehouse warehouse)
     {
+        // normally would be mapped to storage model and then persisted
+        
         warehouse.Id = _warehouses.Max(w => w.Id) + 1;
         _warehouses.Add(warehouse);
+
+        return warehouse.Id;
     }
 
     public void Update(Warehouse warehouse)

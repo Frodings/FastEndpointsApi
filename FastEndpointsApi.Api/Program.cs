@@ -1,6 +1,6 @@
-using FastEndpointsApi.DataAccess.Repositories;
 using FastEndpoints;
 using FastEndpoints.Swagger;
+using FastEndpointsApi.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder();
 builder.Services

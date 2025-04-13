@@ -1,7 +1,7 @@
 # FastEndpointsApi
-For testing FastEndpoints
+For trying out FastEndpoints and features. 
 
-Api is a mock crud api for returning warehouse data for a mock ecom company or similar
+Api is a simple crud api for dummy warehouse data. 
 
 ## Endpoints 
 - GET Return a single warehouse by id
@@ -13,8 +13,9 @@ Api is a mock crud api for returning warehouse data for a mock ecom company or s
 
 ## Todo
 - create crud api
-- add swagger/open api spec for each endpoint
+- add swagger/open api spec for api/each endpoint
 - add auth for create endpoint
-- 
+- add versioning
+- add validation
 
 

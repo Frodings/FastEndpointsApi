@@ -1,5 +1,5 @@
 # FastEndpointsApi
-For trying out FastEndpoints and features. 
+For trying out api creation with [FastEndpoints](https://fast-endpoints.com). 
 
 Api is a simple crud api for dummy warehouse data. 
 
@@ -14,8 +14,9 @@ Api is a simple crud api for dummy warehouse data.
 ## Todo
 - create crud api
 - add swagger/open api spec for api/each endpoint
-- add auth for create endpoint
 - add versioning
 - add validation
+- add default exception handling (returning errors for unhandled exceptions)
+- add auth for create endpoint
 
 

@@ -25,7 +25,6 @@
 
     <ItemGroup>
       <Folder Include="Features\AddNewWarehouse\" />
-      <Folder Include="Features\DeleteWarehouse\" />
       <Folder Include="Features\GetAllWarehouses\" />
     </ItemGroup>
 

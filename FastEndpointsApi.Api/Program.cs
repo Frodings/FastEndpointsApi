@@ -14,8 +14,8 @@ builder.Services
 builder.Services.AddSingleton<IWarehouseRepository, DummyWarehouseRepository>();
 
 var app = builder.Build();
-
-app.UseFastEndpoints(config => 
+app.UseDefaultExceptionHandler()
+    .UseFastEndpoints(config => 
         config.Endpoints.RoutePrefix = "api") // sets api base route for all endpoints
     .UseSwaggerGen();
 
